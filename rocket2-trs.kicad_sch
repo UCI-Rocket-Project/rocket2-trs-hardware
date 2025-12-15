@@ -4504,16 +4504,16 @@
 		(uuid "2ca6b752-17fa-4e35-8453-2b521cdd8e6a")
 	)
 	(junction
+		(at 189.43 86.36)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "35dfa52e-b855-46fa-a615-f310607a5d91")
+	)
+	(junction
 		(at 191.77 59.69)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "38b6d4b8-cbee-476a-bd0e-282cc68f5881")
-	)
-	(junction
-		(at 189.43 96.52)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "3e050ddd-e78b-4c78-a6b1-cc79e2a9cd4e")
 	)
 	(junction
 		(at 76.2 119.38)
@@ -4534,6 +4534,12 @@
 		(uuid "56154f6e-f36f-4870-bbae-0430d72fe934")
 	)
 	(junction
+		(at 189.43 88.9)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "5f0f7e7d-e108-432e-bd20-c88ee6fb983c")
+	)
+	(junction
 		(at 191.77 24.13)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4546,22 +4552,10 @@
 		(uuid "6c5de72c-d438-4635-9575-223d1ad71dee")
 	)
 	(junction
-		(at 189.43 88.9)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "72cfdfa8-f200-4b0f-a62f-a2aca3f07c53")
-	)
-	(junction
 		(at 76.2 48.26)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "75091dfc-e8dc-469b-83bc-a18918a952d3")
-	)
-	(junction
-		(at 189.43 86.36)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "75f64c22-f6b9-4259-9e28-7a21dea0faa2")
 	)
 	(junction
 		(at 233.68 140.97)
@@ -4672,10 +4666,6 @@
 		(uuid "3649ed92-c3ab-47a7-ad24-da594d3dab47")
 	)
 	(no_connect
-		(at 53.34 90.17)
-		(uuid "3d69dc83-9b02-41ca-b28f-e4cfa5e13142")
-	)
-	(no_connect
 		(at 189.23 49.53)
 		(uuid "4a70856a-4a3f-45e6-9346-94ec256aabc5")
 	)
@@ -4722,10 +4712,6 @@
 	(no_connect
 		(at 99.06 77.47)
 		(uuid "9c31799b-c2e5-4e01-b8a0-6871cb9447c0")
-	)
-	(no_connect
-		(at 53.34 87.63)
-		(uuid "9e3497e8-eac4-40f0-9030-0fbd71cba311")
 	)
 	(no_connect
 		(at 163.83 39.37)
@@ -4843,13 +4829,23 @@
 	)
 	(wire
 		(pts
-			(xy 189.23 88.9) (xy 189.43 88.9)
+			(xy 189.43 86.36) (xy 191.77 86.36)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "2ba5f19a-ea45-4b43-b517-ef6f2fab3193")
+		(uuid "26d02193-0713-4f87-81ee-92dd5b5f8f83")
+	)
+	(wire
+		(pts
+			(xy 158.75 109.22) (xy 161.29 109.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2b897740-56e1-4e46-9cb9-d46792f768d0")
 	)
 	(wire
 		(pts
@@ -4903,6 +4899,16 @@
 	)
 	(wire
 		(pts
+			(xy 189.43 88.9) (xy 191.77 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "46174664-fb14-4a8d-b48a-4a377329a871")
+	)
+	(wire
+		(pts
 			(xy 191.77 31.75) (xy 191.77 34.29)
 		)
 		(stroke
@@ -4923,13 +4929,13 @@
 	)
 	(wire
 		(pts
-			(xy 189.43 96.52) (xy 190.5 96.52)
+			(xy 189.23 88.9) (xy 189.43 88.9)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "5580c786-8636-4869-b800-0903346676c8")
+		(uuid "55828fd1-f5fb-43f2-9bae-281b79d86455")
 	)
 	(wire
 		(pts
@@ -5153,16 +5159,6 @@
 	)
 	(wire
 		(pts
-			(xy 189.43 86.36) (xy 191.77 86.36)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8f87aad8-79c3-43a3-be29-efa35e4d7b04")
-	)
-	(wire
-		(pts
 			(xy 68.58 49.53) (xy 68.58 48.26)
 		)
 		(stroke
@@ -5270,16 +5266,6 @@
 			(type default)
 		)
 		(uuid "ae138169-47cb-43b2-9b8f-e77aab7dbfac")
-	)
-	(wire
-		(pts
-			(xy 189.43 88.9) (xy 191.77 88.9)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ae72705a-788a-49c0-9899-d46c3852aa14")
 	)
 	(wire
 		(pts
@@ -5603,7 +5589,7 @@
 	)
 	(wire
 		(pts
-			(xy 189.23 96.52) (xy 189.43 96.52)
+			(xy 190.5 96.52) (xy 189.43 96.52)
 		)
 		(stroke
 			(width 0)
@@ -6811,6 +6797,28 @@
 			)
 		)
 	)
+	(global_label "UART1 TX"
+		(shape input)
+		(at 53.34 87.63 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "c52d78cd-8dbf-4114-9d7c-9000ad5debf3")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 41.3439 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "RADIO_nRST"
 		(shape input)
 		(at 218.44 115.57 180)
@@ -6890,6 +6898,28 @@
 		(uuid "ca941c65-ebe4-420e-b7c9-656f7359801c")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 77.5879 191.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "UART1 RX"
+		(shape input)
+		(at 53.34 90.17 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "cc35cc14-104e-4e47-b6ae-66904dca056c")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 41.0415 90.17 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9631,6 +9661,71 @@
 			(project "rocket2-trs"
 				(path "/f40df73a-33db-451b-892b-c732f49623c2"
 					(reference "TP10")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at 158.75 109.22 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "68d0af12-65a6-4635-b2ae-22c7efcb1ae8")
+		(property "Reference" "#PWR049"
+			(at 162.56 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5V"
+			(at 154.94 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 158.75 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 158.75 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 158.75 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "59129776-0ca4-4a8c-9588-93d65a708180")
+		)
+		(instances
+			(project "rocket2-trs"
+				(path "/f40df73a-33db-451b-892b-c732f49623c2"
+					(reference "#PWR049")
 					(unit 1)
 				)
 			)
@@ -14303,7 +14398,7 @@
 			)
 		)
 		(property "Value" "+3.3V"
-			(at 154.94 106.68 0)
+			(at 152.4 106.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
