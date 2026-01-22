@@ -5,6 +5,171 @@
 	(uuid "f40df73a-33db-451b-892b-c732f49623c2")
 	(paper "A4")
 	(lib_symbols
+		(symbol "Connector:Conn_01x02_Socket"
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "J"
+				(at 0 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Conn_01x02_Socket"
+				(at 0 -5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Generic connector, single row, 01x02, script generated"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_locked" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "connector"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "Connector*:*_1x??_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Conn_01x02_Socket_1_1"
+				(polyline
+					(pts
+						(xy -1.27 0) (xy -0.508 0)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 -2.54) (xy -0.508 -2.54)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 0 -0.508)
+					(mid -0.5058 0)
+					(end 0 0.508)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 0 -3.048)
+					(mid -0.5058 -2.54)
+					(end 0 -2.032)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at -5.08 0 0)
+					(length 3.81)
+					(name "Pin_1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 -2.54 0)
+					(length 3.81)
+					(name "Pin_2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Connector:Conn_Coaxial"
 			(pin_names
 				(offset 1.016)
@@ -1254,8 +1419,8 @@
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
-			(property "Reference" "Q"
-				(at 5.08 1.27 0)
+			(property "Reference" "Q1"
+				(at 9.652 0.762 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -1264,7 +1429,7 @@
 				)
 			)
 			(property "Value" "NMOS"
-				(at 5.08 -1.27 0)
+				(at 9.144 -1.27 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -1272,7 +1437,7 @@
 					(justify left)
 				)
 			)
-			(property "Footprint" ""
+			(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 				(at 5.08 2.54 0)
 				(effects
 					(font
@@ -1513,7 +1678,7 @@
 							)
 						)
 					)
-					(number "2"
+					(number "1"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1531,7 +1696,7 @@
 							)
 						)
 					)
-					(number "1"
+					(number "3"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1549,7 +1714,7 @@
 							)
 						)
 					)
-					(number "3"
+					(number "2"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -4476,6 +4641,131 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "power:+4V"
+			(power)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#PWR"
+				(at 0 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "+4V"
+				(at 0 3.556 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"+4V\""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "global power"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "+4V_0_1"
+				(polyline
+					(pts
+						(xy -0.762 1.27) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 2.54) (xy 0.762 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "+4V_1_1"
+				(pin power_in line
+					(at 0 0 90)
+					(length 0)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "power:+5V"
 			(power)
 			(pin_numbers
@@ -4811,7 +5101,7 @@
 		(uuid "0501c078-0b04-48a9-857c-7cee2ddb031e")
 	)
 	(junction
-		(at 139.7 63.5)
+		(at 123.19 139.7)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "18dbf729-750e-4938-b076-f7314fd02bb9")
@@ -4839,6 +5129,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "3e432f63-ad21-4c07-945b-c1bc56617fb7")
+	)
+	(junction
+		(at 138.43 133.35)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "4e80bbdd-0e43-4006-bced-698208e7b18a")
 	)
 	(junction
 		(at 259.08 26.67)
@@ -4887,6 +5183,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "82434af3-7dbd-4cff-9dc2-baeb2997b5e2")
+	)
+	(junction
+		(at 133.35 127)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "97dac192-3a9c-41c8-b80b-a39fb596fcb7")
 	)
 	(junction
 		(at 228.6 26.67)
@@ -5160,7 +5462,7 @@
 	)
 	(wire
 		(pts
-			(xy 139.7 63.5) (xy 142.24 63.5)
+			(xy 123.19 139.7) (xy 125.73 139.7)
 		)
 		(stroke
 			(width 0)
@@ -5237,16 +5539,6 @@
 			(type default)
 		)
 		(uuid "4236dd53-c702-47ce-8c1f-a0b86829d1a1")
-	)
-	(wire
-		(pts
-			(xy 99.06 87.63) (xy 148.59 87.63)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4bbee7f1-52b3-4174-a4e1-edb960675a37")
 	)
 	(wire
 		(pts
@@ -5340,7 +5632,7 @@
 	)
 	(wire
 		(pts
-			(xy 139.7 63.5) (xy 139.7 67.31)
+			(xy 123.19 139.7) (xy 123.19 143.51)
 		)
 		(stroke
 			(width 0)
@@ -5357,6 +5649,16 @@
 			(type default)
 		)
 		(uuid "67e4c0fb-1d1d-4df9-91f5-262a27d3d612")
+	)
+	(wire
+		(pts
+			(xy 138.43 144.78) (xy 138.43 133.35)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6d8262e8-3191-4009-9395-bb5901cb2419")
 	)
 	(wire
 		(pts
@@ -5450,16 +5752,6 @@
 	)
 	(wire
 		(pts
-			(xy 132.08 80.01) (xy 132.08 63.5)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7c06d32b-908a-40f8-8870-85424e76b8ad")
-	)
-	(wire
-		(pts
 			(xy 227.33 67.31) (xy 227.33 69.85)
 		)
 		(stroke
@@ -5467,6 +5759,16 @@
 			(type default)
 		)
 		(uuid "80b111fb-e9a3-48f9-aa83-11f400da3241")
+	)
+	(wire
+		(pts
+			(xy 133.35 144.78) (xy 138.43 144.78)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "81e36a6b-4ad5-4149-8fdf-b6c226a2e1de")
 	)
 	(wire
 		(pts
@@ -5560,6 +5862,16 @@
 	)
 	(wire
 		(pts
+			(xy 133.35 127) (xy 138.43 127)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9d29024f-71de-4eb5-862e-9bf62011e232")
+	)
+	(wire
+		(pts
 			(xy 100.33 73.66) (xy 99.06 72.39)
 		)
 		(stroke
@@ -5577,16 +5889,6 @@
 			(type default)
 		)
 		(uuid "a34b6160-a258-4907-888d-08d36cb6ada2")
-	)
-	(wire
-		(pts
-			(xy 148.59 80.01) (xy 148.59 87.63)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a35c09df-3c5c-43d0-82ef-2cd6873c0b89")
 	)
 	(wire
 		(pts
@@ -5720,7 +6022,7 @@
 	)
 	(wire
 		(pts
-			(xy 138.43 63.5) (xy 139.7 63.5)
+			(xy 121.92 139.7) (xy 123.19 139.7)
 		)
 		(stroke
 			(width 0)
@@ -5730,7 +6032,7 @@
 	)
 	(wire
 		(pts
-			(xy 132.08 63.5) (xy 133.35 63.5)
+			(xy 115.57 139.7) (xy 116.84 139.7)
 		)
 		(stroke
 			(width 0)
@@ -5747,16 +6049,6 @@
 			(type default)
 		)
 		(uuid "c502768d-ae1b-44a2-88ca-195d2022c012")
-	)
-	(wire
-		(pts
-			(xy 148.59 80.01) (xy 132.08 80.01)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c56f0ea3-d303-4e47-9bc8-331d230cb9a2")
 	)
 	(wire
 		(pts
@@ -5797,6 +6089,16 @@
 			(type default)
 		)
 		(uuid "d1ebbd47-d22d-4622-835a-078e60e25a8c")
+	)
+	(wire
+		(pts
+			(xy 133.35 134.62) (xy 133.35 127)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d286b4f4-3ad4-4da2-8867-de1af11342ff")
 	)
 	(wire
 		(pts
@@ -5950,6 +6252,16 @@
 	)
 	(wire
 		(pts
+			(xy 138.43 133.35) (xy 138.43 129.54)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ef7bc2fd-3389-429e-a153-540063eb0c1e")
+	)
+	(wire
+		(pts
 			(xy 73.66 48.26) (xy 76.2 48.26)
 		)
 		(stroke
@@ -6065,28 +6377,6 @@
 		(uuid "154c6581-7df3-45c9-9f3c-c773ead3d44d")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 204.3271 127 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "ETH_RTS"
-		(shape input)
-		(at 59.69 181.61 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "1967f959-2ebc-4a23-9942-ddb9e58d5b5e")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 48.9224 181.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6337,9 +6627,9 @@
 			)
 		)
 	)
-	(global_label "ETH_CTS"
+	(global_label "NMOS"
 		(shape input)
-		(at 59.69 191.77 180)
+		(at 115.57 139.7 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -6347,57 +6637,14 @@
 			)
 			(justify right)
 		)
-		(uuid "3f601102-2b7c-4411-bd4a-a38ff264fd16")
+		(uuid "426186fc-25a1-412d-801a-1a06055412cc")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 48.9224 191.77 0)
+			(at 107.2629 139.7 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "RADIO_DIO5"
-		(shape input)
-		(at 91.44 166.37 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "425f454c-4661-429f-a8c2-9f5039b7eee1")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 77.5879 166.37 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "LORA_RST"
-		(shape input)
-		(at 91.44 160.02 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "480f969b-b8a7-4973-be84-74155574c2c2")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 79.3229 160.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
 				(hide yes)
 			)
 		)
@@ -6481,6 +6728,28 @@
 		(uuid "534cf264-1b77-4827-a865-cc236b06066c")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 262.8515 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "NMOS"
+		(shape input)
+		(at 99.06 87.63 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "552b6af5-dac2-4d17-bce1-4b33353c2b6c")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 107.3671 87.63 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6688,28 +6957,6 @@
 			)
 		)
 	)
-	(global_label "ETH_nRST"
-		(shape input)
-		(at 59.69 166.37 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "78d4a38c-1ba9-4f57-83ca-f875f1529ef6")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 47.694 166.37 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
 	(global_label "MCU_~{RST}"
 		(shape input)
 		(at 26.67 59.69 180)
@@ -6723,28 +6970,6 @@
 		(uuid "794f6b85-60d5-4121-a1e5-0f623ad80e21")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 15.2182 59.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "RADIO_DIO3"
-		(shape input)
-		(at 91.44 176.53 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "7bbc638a-29e8-452c-ba8f-700a4f555b41")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 77.5879 176.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6842,28 +7067,6 @@
 			)
 		)
 	)
-	(global_label "UART1 TX"
-		(shape input)
-		(at 59.69 156.21 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "8bc8d145-fcb4-421c-b9e8-fc9ea509034d")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 47.6939 156.21 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
 	(global_label "RADIO_MOSI"
 		(shape input)
 		(at 218.44 124.46 180)
@@ -6952,28 +7155,6 @@
 			)
 		)
 	)
-	(global_label "RADIO_DIO2"
-		(shape input)
-		(at 91.44 181.61 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "9fe620fd-6c29-4d01-9e13-a40ea41e27f3")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 77.5879 181.61 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
 	(global_label "MCU_TMS"
 		(shape input)
 		(at 257.81 57.15 0)
@@ -7020,7 +7201,7 @@
 	)
 	(global_label "UART1 TX"
 		(shape input)
-		(at 189.23 91.44 0)
+		(at 189.23 93.98 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -7030,7 +7211,7 @@
 		)
 		(uuid "a2956ce3-a7df-4ffb-bccd-0ef29783a4d2")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 201.2261 91.44 0)
+			(at 201.2261 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7282,28 +7463,6 @@
 			)
 		)
 	)
-	(global_label "RADIO_DIO0"
-		(shape input)
-		(at 91.44 191.77 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "ca941c65-ebe4-420e-b7c9-656f7359801c")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 77.5879 191.77 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
 	(global_label "UART1 RX"
 		(shape input)
 		(at 53.34 90.17 180)
@@ -7317,50 +7476,6 @@
 		(uuid "cc35cc14-104e-4e47-b6ae-66904dca056c")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 41.0415 90.17 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "RADIO_DIO4"
-		(shape input)
-		(at 91.44 171.45 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "cf9e4c5b-10cc-4bce-9676-5b6164e2c421")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 77.5879 171.45 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "RADIO_DIO1"
-		(shape input)
-		(at 91.44 186.69 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "d4ab03ac-90ed-4421-a3b0-ec3abb93ecdf")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 77.5879 186.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7590,53 +7705,9 @@
 			)
 		)
 	)
-	(global_label "ETH_CP2"
-		(shape input)
-		(at 59.69 186.69 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "f2d83ffe-0cda-4777-9311-f7037a1c0722")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 48.62 186.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "ETH_TX"
-		(shape input)
-		(at 59.69 171.45 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "f76f40ba-f357-4806-8ee6-be271de3d997")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 50.1924 171.45 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
 	(global_label "UART1 RX"
 		(shape input)
-		(at 189.23 93.98 0)
+		(at 189.23 91.44 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -7646,56 +7717,12 @@
 		)
 		(uuid "f8439587-ed82-4b2f-8759-af1c81271c73")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 201.5285 93.98 0)
+			(at 201.5285 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "ETH_RX"
-		(shape input)
-		(at 59.69 176.53 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "fb3c1ba6-f0a9-4871-9474-2c2805f2dd59")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 49.89 176.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "UART1 RX"
-		(shape input)
-		(at 59.69 161.29 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "fbd639cf-af0a-481a-8628-699f63ea60eb")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 47.3915 161.29 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
 				(hide yes)
 			)
 		)
@@ -7721,6 +7748,17 @@
 				(hide yes)
 			)
 		)
+	)
+	(hierarchical_label "Battery"
+		(shape input)
+		(at 142.24 115.57 270)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "4bc2ceba-8cb9-468a-b012-ac1ff7e1f8e2")
 	)
 	(symbol
 		(lib_id "Device:C_Small")
@@ -7758,7 +7796,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.mouser.com/catalog/specsheets/TAIYO_YUDEN_03-08-2024_MAJCH168BB7104KTEA01_SS.pdf"
 			(at 93.98 29.21 0)
 			(effects
 				(font
@@ -7977,7 +8015,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.mouser.com/catalog/specsheets/TAIYO_YUDEN_03-08-2024_MAJCH168BB7104KTEA01_SS.pdf"
 			(at 68.58 29.21 0)
 			(effects
 				(font
@@ -8023,72 +8061,6 @@
 			(project "rocket2-trs"
 				(path "/f40df73a-33db-451b-892b-c732f49623c2"
 					(reference "C5")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 149.86 68.58 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "16ca0376-e4f3-4610-aa57-a3751d5382f3")
-		(property "Reference" "#PWR050"
-			(at 149.86 74.93 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 149.86 71.12 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" ""
-			(at 149.86 68.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 149.86 68.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 149.86 68.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "92b01ccf-2009-493c-a638-d49fa8c6bc41")
-		)
-		(instances
-			(project "rocket2-trs"
-				(path "/f40df73a-33db-451b-892b-c732f49623c2"
-					(reference "#PWR050")
 					(unit 1)
 				)
 			)
@@ -8457,7 +8429,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.mouser.com/catalog/specsheets/TAIYO_YUDEN_03-08-2024_MAJCH168BB7104KTEA01_SS.pdf"
 			(at 275.59 31.75 0)
 			(effects
 				(font
@@ -8634,7 +8606,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.mouser.com/catalog/specsheets/TAIYO_YUDEN_03-08-2024_MAJCH168BB7104KTEA01_SS.pdf"
 			(at 260.35 99.06 0)
 			(effects
 				(font
@@ -8751,34 +8723,17 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector:TestPoint")
-		(at 59.69 186.69 270)
+		(lib_id "power:+4V")
+		(at 133.35 127 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "2e2c8b8d-e3e5-4429-8791-8254f6db6a8b")
-		(property "Reference" "TP13"
-			(at 64.77 185.42 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "ETH_CP2"
-			(at 64.77 187.96 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
-			(at 59.69 191.77 0)
+		(fields_autoplaced yes)
+		(uuid "2a6401ae-b83c-4c61-8494-91830bd0b0f4")
+		(property "Reference" "#PWR050"
+			(at 133.35 130.81 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8786,8 +8741,16 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
-			(at 59.69 191.77 0)
+		(property "Value" "Lowside switch +"
+			(at 133.35 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 133.35 127 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8795,8 +8758,17 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "test point"
-			(at 59.69 186.69 0)
+		(property "Datasheet" ""
+			(at 133.35 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+4V\""
+			(at 133.35 127 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8805,12 +8777,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "b1124b6f-d5ec-4265-8537-9e06f7ca729c")
+			(uuid "a6326823-cf75-4889-9f93-93ff5fcbf23e")
 		)
 		(instances
-			(project "rocket2-trs"
+			(project ""
 				(path "/f40df73a-33db-451b-892b-c732f49623c2"
-					(reference "TP13")
+					(reference "#PWR050")
 					(unit 1)
 				)
 			)
@@ -8850,7 +8822,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.seielect.com/catalog/SEI-RMCF_RMCP.pdf"
 			(at 203.2 36.83 0)
 			(effects
 				(font
@@ -8967,72 +8939,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector:TestPoint")
-		(at 91.44 171.45 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "3519845e-6dd3-4441-88bb-7e5809c86a99")
-		(property "Reference" "TP16"
-			(at 96.52 170.18 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "RADIO_DIO4"
-			(at 96.52 172.72 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
-			(at 91.44 176.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 91.44 176.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "test point"
-			(at 91.44 171.45 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "35fe4f36-e4d1-470f-80aa-362bdddc6f20")
-		)
-		(instances
-			(project "rocket2-trs"
-				(path "/f40df73a-33db-451b-892b-c732f49623c2"
-					(reference "TP16")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:+5V")
 		(at 27.94 166.37 90)
 		(unit 1)
@@ -9133,7 +9039,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.comchiptech.com/upload/file/product/product/QW-G0024%20CDSUR4448-HF%20RevD.pdf"
 			(at 129.54 85.09 90)
 			(effects
 				(font
@@ -9253,72 +9159,6 @@
 			(project "rocket2-trs"
 				(path "/f40df73a-33db-451b-892b-c732f49623c2"
 					(reference "#PWR035")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector:TestPoint")
-		(at 59.69 181.61 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "3ef7bd0b-8e21-4db1-8354-e0aa3394bda5")
-		(property "Reference" "TP12"
-			(at 64.77 180.34 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "ETH_RTS"
-			(at 64.77 182.88 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
-			(at 59.69 186.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 59.69 186.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "test point"
-			(at 59.69 181.61 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "abedd68f-7521-4a97-9ff9-f2e1b8bd8e2f")
-		)
-		(instances
-			(project "rocket2-trs"
-				(path "/f40df73a-33db-451b-892b-c732f49623c2"
-					(reference "TP12")
 					(unit 1)
 				)
 			)
@@ -9451,72 +9291,6 @@
 			(project "rocket2-trs"
 				(path "/f40df73a-33db-451b-892b-c732f49623c2"
 					(reference "#PWR041")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector:TestPoint")
-		(at 59.69 156.21 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "4ee3216e-f7f8-465c-90a0-140a792c849d")
-		(property "Reference" "TP21"
-			(at 64.77 154.94 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "UART1 TX"
-			(at 64.77 157.48 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
-			(at 59.69 161.29 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 59.69 161.29 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "test point"
-			(at 59.69 156.21 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "cc12124a-29ce-4423-905e-110fc98ce04e")
-		)
-		(instances
-			(project "rocket2-trs"
-				(path "/f40df73a-33db-451b-892b-c732f49623c2"
-					(reference "TP21")
 					(unit 1)
 				)
 			)
@@ -9819,7 +9593,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.hongkongcrystal.com/wp-content/uploads/images/cataloguePDF/CK_hkc.pdf"
 			(at 128.27 106.68 0)
 			(effects
 				(font
@@ -9985,7 +9759,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.mouser.com/catalog/specsheets/TAIYO_YUDEN_03-08-2024_MAJCH168BB7104KTEA01_SS.pdf"
 			(at 81.28 29.21 0)
 			(effects
 				(font
@@ -10031,72 +9805,6 @@
 			(project "rocket2-trs"
 				(path "/f40df73a-33db-451b-892b-c732f49623c2"
 					(reference "C6")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector:TestPoint")
-		(at 59.69 171.45 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "6249c877-84b6-4dbf-9e10-35b0214eb5a2")
-		(property "Reference" "TP10"
-			(at 64.77 170.18 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "ETH_TX"
-			(at 64.77 172.72 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
-			(at 59.69 176.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 59.69 176.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "test point"
-			(at 59.69 171.45 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "06bd35f5-3504-41a4-a28d-47d51703f724")
-		)
-		(instances
-			(project "rocket2-trs"
-				(path "/f40df73a-33db-451b-892b-c732f49623c2"
-					(reference "TP10")
 					(unit 1)
 				)
 			)
@@ -10333,72 +10041,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector:TestPoint")
-		(at 59.69 176.53 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "775385c3-07d6-429d-bde3-93ee3e99a4bf")
-		(property "Reference" "TP11"
-			(at 64.77 175.26 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "ETH_RX"
-			(at 64.77 177.8 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
-			(at 59.69 181.61 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 59.69 181.61 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "test point"
-			(at 59.69 176.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "fb232223-b53f-4428-aac4-cc04f52c1def")
-		)
-		(instances
-			(project "rocket2-trs"
-				(path "/f40df73a-33db-451b-892b-c732f49623c2"
-					(reference "TP11")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 128.27 109.22 0)
 		(unit 1)
@@ -10417,7 +10059,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 128.27 113.03 0)
+			(at 128.27 114.046 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10536,16 +10178,17 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector:TestPoint")
-		(at 59.69 161.29 270)
+		(lib_id "Connector:Conn_01x02_Socket")
+		(at 143.51 127 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "7ee32ff0-7e9a-401a-b44c-b5e4ed66ce1d")
-		(property "Reference" "TP22"
-			(at 64.77 160.02 90)
+		(fields_autoplaced yes)
+		(uuid "7be6e705-9385-4dc9-881c-cbdb42d9a31f")
+		(property "Reference" "J4"
+			(at 144.78 126.9999 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10553,8 +10196,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "UART1 RX"
-			(at 64.77 162.56 90)
+		(property "Value" "Conn_01x02_Socket"
+			(at 144.78 129.5399 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10562,8 +10205,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
-			(at 59.69 166.37 0)
+		(property "Footprint" "Connector_PinSocket_1.27mm:PinSocket_1x02_P1.27mm_Vertical"
+			(at 143.51 127 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10571,8 +10214,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
-			(at 59.69 166.37 0)
+		(property "Datasheet" "https://multimedia.3m.com/mws/media/22105O/3m-tm-boardmount-socket-100-lowprof-strt-sldrtails-ts0211.pdf"
+			(at 143.51 127 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10580,22 +10223,25 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "test point"
-			(at 59.69 161.29 0)
+		(property "Description" "Generic connector, single row, 01x02, script generated"
+			(at 143.51 127 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(hide yes)
 			)
+		)
+		(pin "2"
+			(uuid "1f6e9f0e-60a0-4f73-95bc-09b3fe0f56a4")
 		)
 		(pin "1"
-			(uuid "5c21aa47-b21c-438d-8522-4220a0989ee4")
+			(uuid "60af8db8-00e6-4c8b-9792-10c8d593e996")
 		)
 		(instances
-			(project "rocket2-trs"
+			(project ""
 				(path "/f40df73a-33db-451b-892b-c732f49623c2"
-					(reference "TP22")
+					(reference "J4")
 					(unit 1)
 				)
 			)
@@ -11018,7 +10664,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 139.7 72.39 0)
+		(at 123.19 148.59 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -11026,7 +10672,7 @@
 		(dnp no)
 		(uuid "850b9572-d1b8-4dc5-8231-7e14aecb331d")
 		(property "Reference" "#PWR052"
-			(at 139.7 78.74 0)
+			(at 123.19 154.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11035,7 +10681,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 139.7 74.93 90)
+			(at 123.19 151.13 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11044,7 +10690,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 139.7 72.39 0)
+			(at 123.19 148.59 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11053,7 +10699,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 139.7 72.39 0)
+			(at 123.19 148.59 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11062,7 +10708,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 139.7 72.39 0)
+			(at 123.19 148.59 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11077,72 +10723,6 @@
 			(project "rocket2-trs"
 				(path "/f40df73a-33db-451b-892b-c732f49623c2"
 					(reference "#PWR052")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector:TestPoint")
-		(at 91.44 191.77 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "8a11f3cd-3c9b-43da-aaef-2035b40f902e")
-		(property "Reference" "TP20"
-			(at 96.52 190.5 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "RADIO_DIO0"
-			(at 96.52 193.04 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
-			(at 91.44 196.85 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 91.44 196.85 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "test point"
-			(at 91.44 191.77 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "d2ba7dcf-4fe0-49ab-a87d-4b58f4b50cc1")
-		)
-		(instances
-			(project "rocket2-trs"
-				(path "/f40df73a-33db-451b-892b-c732f49623c2"
-					(reference "TP20")
 					(unit 1)
 				)
 			)
@@ -11281,72 +10861,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector:TestPoint")
-		(at 91.44 166.37 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "8e143afa-2cca-44bc-af29-a6d543f0210d")
-		(property "Reference" "TP15"
-			(at 96.52 165.1 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "RADIO_DIO5"
-			(at 96.52 167.64 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
-			(at 91.44 171.45 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 91.44 171.45 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "test point"
-			(at 91.44 166.37 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "b18bc45b-1a3f-4874-b268-43bae18480e6")
-		)
-		(instances
-			(project "rocket2-trs"
-				(path "/f40df73a-33db-451b-892b-c732f49623c2"
-					(reference "TP15")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:R_Small_US")
 		(at 118.11 85.09 90)
 		(unit 1)
@@ -11380,7 +10894,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.seielect.com/catalog/SEI-RMCF_RMCP.pdf"
 			(at 118.11 85.09 0)
 			(effects
 				(font
@@ -11466,7 +10980,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://download.mikroe.com/documents/datasheets/Wio-E5%20Datasheet.pdf"
+		(property "Datasheet" "https://files.seeedstudio.com/products/317990687/res/LoRa-E5%20module%20datasheet_V1.1.pdf?_gl=1*1jcfbpw*_up*MQ..*_gs*MQ..&gclid=CjwKCAiA7LzLBhAgEiwAjMWzCBZU1i2Y97zb4jsl9MSsodq-KuHr4I2hPhxQ_VDq6-DF4COI3ApUPBoCu60QAvD_BwE&gbraid=0AAAAACiAB440FzmSXEH9TzvGR6jKWLmAq"
 			(at 173.99 72.39 0)
 			(effects
 				(font
@@ -11566,6 +11080,73 @@
 		)
 	)
 	(symbol
+		(lib_id "power:+4V")
+		(at 138.43 133.35 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "9024a8e8-df0a-482c-9bfc-826412038818")
+		(property "Reference" "#PWR051"
+			(at 134.62 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "Lowside switch -"
+			(at 142.24 133.3499 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 138.43 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 138.43 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+4V\""
+			(at 138.43 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "9a1d306b-eb61-4d9b-b7f0-698586d7a1ac")
+		)
+		(instances
+			(project "rocket2-trs"
+				(path "/f40df73a-33db-451b-892b-c732f49623c2"
+					(reference "#PWR051")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Connector:TestPoint")
 		(at 27.94 176.53 270)
 		(unit 1)
@@ -11626,72 +11207,6 @@
 			(project "rocket2-trs"
 				(path "/f40df73a-33db-451b-892b-c732f49623c2"
 					(reference "TP5")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector:TestPoint")
-		(at 91.44 181.61 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "91eb8790-ce45-446e-95d7-6b7948128f42")
-		(property "Reference" "TP18"
-			(at 96.52 180.34 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "RADIO_DIO2"
-			(at 96.52 182.88 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
-			(at 91.44 186.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 91.44 186.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "test point"
-			(at 91.44 181.61 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "b58a790d-8d22-4744-9e3f-e5b7385bf77c")
-		)
-		(instances
-			(project "rocket2-trs"
-				(path "/f40df73a-33db-451b-892b-c732f49623c2"
-					(reference "TP18")
 					(unit 1)
 				)
 			)
@@ -11928,7 +11443,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.mouser.com/catalog/specsheets/TAIYO_YUDEN_03-08-2024_MAJCH168BB7104KTEA01_SS.pdf"
 			(at 165.1 160.02 0)
 			(effects
 				(font
@@ -12276,7 +11791,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.seielect.com/catalog/SEI-RMCF_RMCP.pdf"
 			(at 203.2 44.45 0)
 			(effects
 				(font
@@ -12364,7 +11879,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.molex.com/en-us/products/part-detail/732512200?display=pdf"
 			(at 186.69 130.81 0)
 			(effects
 				(font
@@ -12748,72 +12263,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector:TestPoint")
-		(at 91.44 160.02 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "a9d6d299-2abb-46af-b4c0-13d32d52c2e7")
-		(property "Reference" "TP23"
-			(at 96.52 158.75 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "LORA_RST"
-			(at 96.52 161.29 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
-			(at 91.44 165.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 91.44 165.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "test point"
-			(at 91.44 160.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "c503837c-3e80-48ee-9a50-00594a1160d5")
-		)
-		(instances
-			(project "rocket2-trs"
-				(path "/f40df73a-33db-451b-892b-c732f49623c2"
-					(reference "TP23")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:C_Small")
 		(at 55.88 29.21 0)
 		(unit 1)
@@ -12849,7 +12298,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.mouser.com/catalog/specsheets/TAIYO_YUDEN_03-08-2024_MAJCH168BB7104KTEA01_SS.pdf"
 			(at 55.88 29.21 0)
 			(effects
 				(font
@@ -13068,7 +12517,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.mouser.com/catalog/specsheets/TAIYO_YUDEN_03-08-2024_MAJCH168BB7104KTEA01_SS.pdf"
 			(at 259.08 31.75 0)
 			(effects
 				(font
@@ -13121,7 +12570,7 @@
 	)
 	(symbol
 		(lib_id "Simulation_SPICE:NMOS")
-		(at 147.32 63.5 0)
+		(at 130.81 139.7 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -13129,7 +12578,7 @@
 		(dnp no)
 		(uuid "b4aa1414-594c-400e-bb4f-c045569b8626")
 		(property "Reference" "Q1"
-			(at 153.67 62.2299 0)
+			(at 140.462 138.938 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13138,7 +12587,7 @@
 			)
 		)
 		(property "Value" "NMOS"
-			(at 153.67 64.7699 0)
+			(at 139.954 140.97 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13146,8 +12595,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
-			(at 152.4 60.96 0)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
+			(at 135.89 137.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13156,7 +12605,7 @@
 			)
 		)
 		(property "Datasheet" "https://ngspice.sourceforge.io/docs/ngspice-html-manual/manual.xhtml#cha_MOSFETs"
-			(at 147.32 76.2 0)
+			(at 130.81 152.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13165,7 +12614,7 @@
 			)
 		)
 		(property "Description" "N-MOSFET transistor, drain/source/gate"
-			(at 147.32 63.5 0)
+			(at 130.81 139.7 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13174,7 +12623,7 @@
 			)
 		)
 		(property "Sim.Device" "NMOS"
-			(at 147.32 80.645 0)
+			(at 130.81 156.845 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13183,7 +12632,7 @@
 			)
 		)
 		(property "Sim.Type" "VDMOS"
-			(at 147.32 82.55 0)
+			(at 130.81 158.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13192,7 +12641,7 @@
 			)
 		)
 		(property "Sim.Pins" "1=D 2=G 3=S"
-			(at 147.32 78.74 0)
+			(at 130.81 154.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13286,72 +12735,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector:TestPoint")
-		(at 59.69 191.77 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "b6c1f2cd-5e09-45d8-9aab-43c036600d23")
-		(property "Reference" "TP14"
-			(at 64.77 190.5 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "ETH_CTS"
-			(at 64.77 193.04 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
-			(at 59.69 196.85 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 59.69 196.85 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "test point"
-			(at 59.69 191.77 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "1564b1c1-f4e6-490f-ab3c-9f5d2e60cfaa")
-		)
-		(instances
-			(project "rocket2-trs"
-				(path "/f40df73a-33db-451b-892b-c732f49623c2"
-					(reference "TP14")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:C_Small")
 		(at 228.6 31.75 0)
 		(unit 1)
@@ -13387,7 +12770,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.mouser.com/catalog/specsheets/TAIYO_YUDEN_03-08-2024_MAJCH168BB7104KTEA01_SS.pdf"
 			(at 228.6 31.75 0)
 			(effects
 				(font
@@ -13474,7 +12857,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.mouser.com/catalog/specsheets/TAIYO_YUDEN_03-08-2024_MAJCH168BB7104KTEA01_SS.pdf"
 			(at 30.48 29.21 0)
 			(effects
 				(font
@@ -13562,7 +12945,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.seielect.com/catalog/SEI-RMCF_RMCP.pdf"
 			(at 29.21 54.61 0)
 			(effects
 				(font
@@ -13740,72 +13123,6 @@
 			(project "rocket2-trs"
 				(path "/f40df73a-33db-451b-892b-c732f49623c2"
 					(reference "#PWR026")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 149.86 58.42 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "c3c2f781-6a45-43cb-822d-bb8f59cbbfcb")
-		(property "Reference" "#PWR051"
-			(at 149.86 52.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 149.86 55.88 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" ""
-			(at 149.86 58.42 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 149.86 58.42 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 149.86 58.42 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "705408ae-06ba-4389-815f-bccd2731aabe")
-		)
-		(instances
-			(project "rocket2-trs"
-				(path "/f40df73a-33db-451b-892b-c732f49623c2"
-					(reference "#PWR051")
 					(unit 1)
 				)
 			)
@@ -14042,7 +13359,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://gct.co/files/specs/usb4105-spec.pdf"
 			(at 176.53 44.45 0)
 			(effects
 				(font
@@ -14260,7 +13577,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/20/DB2G32500L1_E.pdf"
 			(at 148.59 41.91 90)
 			(effects
 				(font
@@ -14377,72 +13694,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector:TestPoint")
-		(at 91.44 176.53 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "e20a1a2f-cb25-4f40-beb8-32e4936e2c54")
-		(property "Reference" "TP17"
-			(at 96.52 175.26 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "RADIO_DIO3"
-			(at 96.52 177.8 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
-			(at 91.44 181.61 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 91.44 181.61 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "test point"
-			(at 91.44 176.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "fab226d0-78dd-4a27-b16b-aaef87182fa6")
-		)
-		(instances
-			(project "rocket2-trs"
-				(path "/f40df73a-33db-451b-892b-c732f49623c2"
-					(reference "TP17")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:D_Zener_Small")
 		(at 135.89 41.91 270)
 		(unit 1)
@@ -14478,7 +13729,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/20/DB2G32500L1_E.pdf"
 			(at 135.89 41.91 90)
 			(effects
 				(font
@@ -14631,7 +13882,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.mouser.com/catalog/specsheets/TAIYO_YUDEN_03-08-2024_MAJCH168BB7104KTEA01_SS.pdf"
 			(at 29.21 64.77 0)
 			(effects
 				(font
@@ -14912,7 +14163,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://cdn.amphenol-cs.com/media/wysiwyg/files/documentation/datasheet/boardwiretoboard/bwb_minitek127_btb.pdf"
 			(at 243.84 59.69 0)
 			(effects
 				(font
@@ -15046,72 +14297,6 @@
 			(project "rocket2-trs"
 				(path "/f40df73a-33db-451b-892b-c732f49623c2"
 					(reference "#PWR043")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector:TestPoint")
-		(at 59.69 166.37 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "f04c1a2e-598c-48cc-afe3-822400594b03")
-		(property "Reference" "TP9"
-			(at 64.77 165.1 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "ETH_nRST"
-			(at 64.77 167.64 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
-			(at 59.69 171.45 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 59.69 171.45 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "test point"
-			(at 59.69 166.37 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "d4413d3b-2a0c-481a-90d9-1ce13ec8433c")
-		)
-		(instances
-			(project "rocket2-trs"
-				(path "/f40df73a-33db-451b-892b-c732f49623c2"
-					(reference "TP9")
 					(unit 1)
 				)
 			)
@@ -15314,7 +14499,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_Small_US")
-		(at 139.7 69.85 0)
+		(at 123.19 146.05 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -15322,7 +14507,7 @@
 		(dnp no)
 		(uuid "f9b7bbfc-e56a-46e0-8647-153b9e642464")
 		(property "Reference" "R6"
-			(at 144.78 69.85 90)
+			(at 128.27 146.05 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15330,7 +14515,7 @@
 			)
 		)
 		(property "Value" "100K"
-			(at 142.24 69.85 90)
+			(at 125.73 146.05 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15338,7 +14523,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 139.7 69.85 0)
+			(at 123.19 146.05 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15346,8 +14531,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
-			(at 139.7 69.85 0)
+		(property "Datasheet" "https://www.seielect.com/catalog/SEI-RMCF_RMCP.pdf"
+			(at 123.19 146.05 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15356,7 +14541,7 @@
 			)
 		)
 		(property "Description" "Resistor, small US symbol"
-			(at 139.7 69.85 0)
+			(at 123.19 146.05 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15365,7 +14550,7 @@
 			)
 		)
 		(property "Part #" "Generic 0603 5.1K 1% Resistor"
-			(at 139.7 69.85 0)
+			(at 123.19 146.05 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15374,7 +14559,7 @@
 			)
 		)
 		(property "Manufacturer" "Generic"
-			(at 139.7 69.85 0)
+			(at 123.19 146.05 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15529,7 +14714,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_Small_US")
-		(at 135.89 63.5 90)
+		(at 119.38 139.7 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -15537,7 +14722,7 @@
 		(dnp no)
 		(uuid "fd350a6b-a647-45a2-bd61-caafcbeb5456")
 		(property "Reference" "R5"
-			(at 135.89 58.42 90)
+			(at 119.38 134.62 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15545,7 +14730,7 @@
 			)
 		)
 		(property "Value" "100"
-			(at 135.89 60.96 90)
+			(at 119.38 137.16 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15553,7 +14738,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 135.89 63.5 0)
+			(at 119.38 139.7 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15561,8 +14746,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
-			(at 135.89 63.5 0)
+		(property "Datasheet" "https://www.seielect.com/catalog/SEI-RMCF_RMCP.pdf"
+			(at 119.38 139.7 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15571,7 +14756,7 @@
 			)
 		)
 		(property "Description" "Resistor, small US symbol"
-			(at 135.89 63.5 0)
+			(at 119.38 139.7 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15580,7 +14765,7 @@
 			)
 		)
 		(property "Part #" "Generic 0603 5.1K 1% Resistor"
-			(at 135.89 63.5 0)
+			(at 119.38 139.7 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15589,7 +14774,7 @@
 			)
 		)
 		(property "Manufacturer" "Generic"
-			(at 135.89 63.5 0)
+			(at 119.38 139.7 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15648,7 +14833,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.mouser.com/catalog/specsheets/TAIYO_YUDEN_03-08-2024_MAJCH168BB7104KTEA01_SS.pdf"
 			(at 43.18 29.21 0)
 			(effects
 				(font
@@ -15765,72 +14950,6 @@
 			(project "rocket2-trs"
 				(path "/f40df73a-33db-451b-892b-c732f49623c2"
 					(reference "#PWR020")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector:TestPoint")
-		(at 91.44 186.69 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "ffd09adc-cb54-42da-b3b7-6c85bc30531c")
-		(property "Reference" "TP19"
-			(at 96.52 185.42 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "RADIO_DIO1"
-			(at 96.52 187.96 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
-			(at 91.44 191.77 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 91.44 191.77 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "test point"
-			(at 91.44 186.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "c0e3da91-524d-41c7-a6fe-8827cecf1958")
-		)
-		(instances
-			(project "rocket2-trs"
-				(path "/f40df73a-33db-451b-892b-c732f49623c2"
-					(reference "TP19")
 					(unit 1)
 				)
 			)
