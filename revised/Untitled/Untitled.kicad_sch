@@ -5224,6 +5224,214 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "UCIRP-KiCAD-Lib:Crystal_GND24_Small"
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "Y"
+				(at 1.27 4.445 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "Crystal_GND24_Small"
+				(at 1.27 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Four pin crystal, GND on pins 2 and 4, small symbol"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "quartz ceramic resonator oscillator"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "Crystal*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Crystal_GND24_Small_0_1"
+				(polyline
+					(pts
+						(xy -1.27 1.27) (xy -1.27 1.905) (xy 1.27 1.905) (xy 1.27 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 -0.762) (xy -1.27 0.762)
+					)
+					(stroke
+						(width 0.381)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 -1.27) (xy -1.27 -1.905) (xy 1.27 -1.905) (xy 1.27 -1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -0.762 -1.524)
+					(end 0.762 1.524)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 -0.762) (xy 1.27 0.762)
+					)
+					(stroke
+						(width 0.381)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "Crystal_GND24_Small_1_1"
+				(pin passive line
+					(at -2.54 0 0)
+					(length 1.27)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 0.762 0.762)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 2.54 270)
+					(length 0.635)
+					(name "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 0.762 0.762)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -2.54 90)
+					(length 0.635)
+					(name "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 0.762 0.762)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 2.54 0 180)
+					(length 1.27)
+					(name "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 0.762 0.762)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "UCIRP-KiCAD-Lib:GC-XPORT"
 			(pin_numbers
 				(hide yes)
@@ -7343,6 +7551,10 @@
 		(uuid "fad4c4b7-aca0-4e47-82ba-6aa827f3ebf6")
 	)
 	(no_connect
+		(at 19.05 130.81)
+		(uuid "1be9c5df-7b1a-4fdd-b3a5-ad8fbdb3aca3")
+	)
+	(no_connect
 		(at 252.73 43.18)
 		(uuid "2597b70b-9804-4181-9fd2-1f062d49ccf8")
 	)
@@ -7442,6 +7654,16 @@
 	)
 	(wire
 		(pts
+			(xy 29.21 129.54) (xy 31.75 129.54)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0ffd1c65-261b-46f2-ac83-f028912db077")
+	)
+	(wire
+		(pts
 			(xy 78.74 105.41) (xy 82.55 105.41)
 		)
 		(stroke
@@ -7489,6 +7711,16 @@
 			(type default)
 		)
 		(uuid "1978f94c-f821-4b32-82eb-2576ccaa695c")
+	)
+	(wire
+		(pts
+			(xy 13.97 130.81) (xy 13.97 138.43)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "19a99255-2db3-4deb-b53f-76505ef718b6")
 	)
 	(wire
 		(pts
@@ -8242,6 +8474,16 @@
 	)
 	(wire
 		(pts
+			(xy 29.21 138.43) (xy 29.21 129.54)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8edc3144-43c6-4156-ac1a-d9521c7cd4e4")
+	)
+	(wire
+		(pts
 			(xy 21.59 27.94) (xy 21.59 31.75)
 		)
 		(stroke
@@ -8829,6 +9071,16 @@
 			(type default)
 		)
 		(uuid "e58f2826-5474-4a88-be61-cf646f0b8cee")
+	)
+	(wire
+		(pts
+			(xy 13.97 138.43) (xy 29.21 138.43)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e891fe3c-52c7-4d29-9c49-2c046bc37595")
 	)
 	(wire
 		(pts
@@ -10311,6 +10563,71 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 16.51 133.35 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "00dc5ebd-427d-4c4d-9ad3-989dc884f0c2")
+		(property "Reference" "#PWR061"
+			(at 16.51 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 16.51 137.414 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 16.51 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 16.51 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 16.51 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "0646a886-cd81-4f28-bf86-cca3ff51c9db")
+		)
+		(instances
+			(project ""
+				(path "/6ad12b4b-0f61-4743-a5d4-53ab55d92af2"
+					(reference "#PWR061")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R")
 		(at 101.6 189.23 0)
 		(unit 1)
@@ -10709,6 +11026,98 @@
 			(project "Untitled"
 				(path "/6ad12b4b-0f61-4743-a5d4-53ab55d92af2"
 					(reference "#PWR023")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "UCIRP-KiCAD-Lib:Crystal_GND24_Small")
+		(at 16.51 130.81 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "13d7e3eb-9c4f-4b4d-a6e6-c3b2ae25a9d3")
+		(property "Reference" "Y1"
+			(at 19.431 133.223 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "16MHz"
+			(at 20.828 135.382 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Crystal:Crystal_SMD_2016-4Pin_2.0x1.6mm"
+			(at 16.51 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://ecsxtal.com/store/pdf/ECS_1633.pdf"
+			(at 16.51 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 16.51 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "ECS Inc."
+			(at 16.51 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part #" "ECS-1633-160-BN-TR"
+			(at 16.51 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "f3f5b8e9-5192-4163-8c68-dd7a239d0b1d")
+		)
+		(pin "2"
+			(uuid "fe0e0ca4-54d2-4da7-8cbb-4106d750f7ef")
+		)
+		(pin "3"
+			(uuid "d5882dc6-29cd-46fa-9e3e-4271560b1b81")
+		)
+		(pin "4"
+			(uuid "3e448f4f-284f-4ae4-bb9a-b3bb1fdfba3a")
+		)
+		(instances
+			(project "Untitled"
+				(path "/6ad12b4b-0f61-4743-a5d4-53ab55d92af2"
+					(reference "Y1")
 					(unit 1)
 				)
 			)
@@ -12353,6 +12762,72 @@
 			(project "Untitled"
 				(path "/6ad12b4b-0f61-4743-a5d4-53ab55d92af2"
 					(reference "R14")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3.3V")
+		(at 16.51 128.27 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "3b76376e-531d-4ae1-8ecc-864573211e77")
+		(property "Reference" "#PWR060"
+			(at 16.51 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3.3V"
+			(at 16.51 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 16.51 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 16.51 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+			(at 16.51 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "5a2bf5a1-5204-46d2-a8ec-00d9b094c72f")
+		)
+		(instances
+			(project ""
+				(path "/6ad12b4b-0f61-4743-a5d4-53ab55d92af2"
+					(reference "#PWR060")
 					(unit 1)
 				)
 			)
