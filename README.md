@@ -33,7 +33,7 @@ rocket2-trs-hardware/
 ## 🛠 Tools
 
 - **KiCad** for schematic capture and PCB layout
-- **MkDocs** with Material theme for documentation
+- **MkDocs** for documentation
 
 ---
 
