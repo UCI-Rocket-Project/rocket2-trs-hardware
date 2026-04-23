@@ -1,4 +1,4 @@
-# rocket2-trs-hardware
+# 🚀 rocket2-trs-hardware
 
 **TRS (Telemetry Radio System) hardware design files for MOCH4**, UCI Rocket Project's bi-propellant liquid methalox rocket.
 
