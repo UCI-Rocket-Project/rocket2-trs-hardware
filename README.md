@@ -66,5 +66,3 @@ Then open `http://127.0.0.1:8000` in your browser.
 ## 👥 Team
 
 UCI Rocket Project — Liquids Team, Avionics
-
-[uciRocketProject.org](https://www.ucirocketproject.org) · [GitHub Org](https://github.com/UCI-Rocket-Project)
