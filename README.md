@@ -1,8 +1,8 @@
 # rocket2-trs-hardware
 
-**TRS (Telemetry and Radio System) hardware design files for MOCH4**, UCI Rocket Project's bi-propellant liquid methalox rocket.
+**TRS (Telemetry Radio System) hardware design files for MOCH4**, UCI Rocket Project's bi-propellant liquid methalox rocket.
 
-This repository contains the KiCad schematics, PCB layouts, and production outputs, along with full hardware documentation.
+This repository contains the KiCad schematics, PCB layouts, and other files, along with full hardware documentation.
 
 ---
 
@@ -11,8 +11,6 @@ This repository contains the KiCad schematics, PCB layouts, and production outpu
 Full hardware documentation is hosted at:
 
 > **[INSERT MKDOCS LINK HERE]**
-
-The docs cover board architecture, component selection rationale, pinouts, assembly notes, and integration with the MOCH4 avionics stack.
 
 ---
 
@@ -36,7 +34,6 @@ rocket2-trs-hardware/
 
 - **KiCad** for schematic capture and PCB layout
 - **MkDocs** with Material theme for documentation
-- **GitHub Actions** for automated doc deployment
 
 ---
 
