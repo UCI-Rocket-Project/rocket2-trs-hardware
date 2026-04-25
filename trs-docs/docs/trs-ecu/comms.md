@@ -24,13 +24,3 @@ TRS-ECU uses the same hardware interfaces as TRS-GND. Refer to [TRS-GND Comms](.
 [Network Switch - Bunker] <── Ethernet ──> [Router - Test Stand] <── Ethernet ──> [GSE Laptop / GUI PC]
                                                                                                                                                                      
 ```
-
-## IP Configuration
-
-| Parameter | Value |
-|-----------|-------|
-| IP assignment | DHCP or static (via Ethernet Xport config) |
-| Ethernet Xport UART baud | _TODO: confirm_ |
-| LoRa frequency | 915 MHz |
-| LoRa spreading factor | _TODO: confirm_ |
-| LoRa bandwidth | _TODO: confirm_ |

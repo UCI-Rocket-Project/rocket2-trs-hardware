@@ -1,13 +1,12 @@
 # TRS-ARM — Comms
 
-TRS-ARM uses the same hardware interfaces as TRS-GND and TRS-ECU. Refer to [TRS-GND Comms](../trs-gnd/comms.md) for full interface details on the RFM95W, LoRa module, etc.
+TRS-ARM uses the same hardware interfaces as TRS-GND and TRS-ECU. 
 
 ## Interface Usage in TRS-ARM 
 
 | Interface | Role in TRS-ARM |
 |-----------|-----------------|
-| RFM95W (915 MHz LoRa) | Primary radio link to ground (TRS-GND) |
-| SEEEDSTUDIOLORAERMINI | Secondary LoRa / redundancy |
+| RFM95W (915 MHz LoRa) | Arming radio link to TRS-GND |
 | FC Switch (NMOS1/NMOS2) | **Active** — arms/disarms Easy Mini flight computer |
 | GC-XPORT-ENH (Ethernet) | Not connected in flight |
 | USB-C | Pre-flight debug/flash only |
@@ -39,16 +38,3 @@ The FC switch is controlled by the STM32 in response to arm/disarm commands rece
 |-----------------------|--------------|-----------------|
 | ARM | Assert LOGICA1 / LOGICB1 | Closed — Easy Mini powered |
 | DISARM | De-assert LOGICA1 / LOGICB1 | Open — Easy Mini unpowered |
-
-The optocoupler (TLP3553A) provides galvanic isolation between the STM32 logic and the FC switch power rail.
-
-## LoRa Link Parameters
-
-| Parameter | Value |
-|-----------|-------|
-| Frequency | 915 MHz |
-| Modulation | LoRa (SX1276) |
-| Spreading factor | _TODO: confirm_ |
-| Bandwidth | _TODO: confirm_ |
-| TX power | _TODO: confirm (dBm)_ |
-| Expected range | > 1 km line-of-sight |

@@ -14,23 +14,14 @@ nav:
   - TRS-GND:
     - Overview: trs-gnd/overview.md
     - Hardware: trs-gnd/hardware.md
-    - Pinout: trs-gnd/pinout.md
-    - Power: trs-gnd/power.md
     - Comms: trs-gnd/comms.md
-    - Setup & Flashing: trs-gnd/setup-flashing.md
 
   - TRS-ECU:
     - Overview: trs-ecu/overview.md
     - Hardware: trs-ecu/hardware.md
-    - Pinout: trs-ecu/pinout.md
-    - Power: trs-ecu/power.md
     - Comms: trs-ecu/comms.md
-    - Setup & Flashing: trs-ecu/setup-flashing.md
 
   - TRS-ARM:
     - Overview: trs-arm/overview.md
     - Hardware: trs-arm/hardware.md
-    - Pinout: trs-arm/pinout.md
-    - Power: trs-arm/power.md
     - Comms: trs-arm/comms.md
-    - Setup & Flashing: trs-arm/setup-flashing.md

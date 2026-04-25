@@ -1,17 +1,9 @@
 # TRS-ECU — Hardware
 
-## TRS-ECU Specific Notes
+TRS-ECU uses the same `rocket2-trs-hardware` PCB as TRS-GND and TRS-ARM. See [TRS-GND Hardware](../trs-gnd/hardware.md) for a full explanation of every component and the reasoning behind each choice — all of that applies equally here.
 
-| Item | Detail |
-|------|--------|
-| Power input | 8.4V LiPo (battery) |
-| Radio count | 1× TRS_RADIO (RFM95W) |
-| Ethernet | Connected to bunker network switch via RJ45 |
-| FC Switch | Not actively used in ECU role (populated but unused) |
-| USB-C | Available for flashing / debug |
+The one meaningful difference in the ECU role is that the **FC switch is not used**. The TLP3553A optocouplers and NMOS transistors are populated on the board but held inactive in firmware. TRS-ECU has no need to arm anything — its job is purely to receive telemetry and put it on the network.
 
 ## Enclosure / Mounting
 
-- Mounted in the bunker enclosure
-- Antenna routed externally for line-of-sight to test stand
-- RJ45 connects directly to bunker network switch
+TRS-ECU is mounted in an enclosure. The antenna is routed externally to maintain line-of-sight to the test stand. Ethernet connects directly to the network switch.

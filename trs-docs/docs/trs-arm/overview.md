@@ -7,15 +7,18 @@
 
 ## Description
 
-TRS-ARM is mounted inside the rocket's avionics bay. It is the rocket-side endpoint of the 915 MHz LoRa telemetry link, communicating with TRS-GND at the test stand to arm the flight computers. In addition, TRS-ARM controls the **FC Switch** — the flight computer power/arming relay that turns on/arms the Easy Mini flight computer.
+TRS-ARM is mounted inside the rocket's avionics bay and is the only node in the system that can arm the Easy Mini flight computer. It receives arm and disarm commands from TRS-GND over the 915 MHz LoRa link and asserts the FC switch in response — physically gating power to the Easy Mini. The arming authority has to live on the rocket because the FC switch is co-located with the Easy Mini inside the airframe; there is no way to control it remotely without a node onboard.
 
-TRS-ARM is powered by an 8.4V LiPo battery inside the AV bay.
+TRS-ARM boots in a safe, disarmed state. The Easy Mini only receives power after an explicit ARM command is received and verified over the radio link, which means the flight computer cannot accidentally activate e-matches during transport, integration, or handling on the pad.
+
+TRS-ARM is also the return path for REDS radio data — it relays it from the rocket back to TRS-GND at the test stand, which then forwards it over Ethernet to the bunker.
 
 ---
 
 ## Key Responsibilities
 
-- Receive commands from ground (arm[ON]/disarm[OFF]) over 915 MHz LoRa
-- Transmit REDS radio data  back to ground
-- Control FC Switch to arm/disarm the Easy Mini flight computer
-- Operate reliably from battery power throughout flight
+- Receive arm/disarm commands from TRS-GND over 915 MHz LoRa
+- Assert FC switch to arm the Easy Mini flight computer
+- Default to disarmed state on every boot — arming requires an explicit command
+- Relay REDS radio data back to TRS-GND at the test stand
+- Operate from AV bay LiPo battery through the full flight profile
