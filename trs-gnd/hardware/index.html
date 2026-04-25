@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <meta name="author" content="Avionics Team">
+        
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+        <title>Hardware - TRS Documentation</title>
+        <link href="../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../css/fontawesome.min.css" rel="stylesheet">
+        <link href="../../css/brands.min.css" rel="stylesheet">
+        <link href="../../css/solid.min.css" rel="stylesheet">
+        <link href="../../css/v4-font-face.min.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
+        <link id="hljs-light" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" >
+        <link id="hljs-dark" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github-dark.min.css" disabled>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script>hljs.highlightAll();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="../..">TRS Documentation</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="nav-item">
+                                <a href="../.." class="nav-link">Home</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle active" aria-current="page" role="button" data-bs-toggle="dropdown"  aria-expanded="false">TRS-GND</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../overview/" class="dropdown-item">Overview</a>
+</li>
+                                    
+<li>
+    <a href="./" class="dropdown-item active" aria-current="page">Hardware</a>
+</li>
+                                    
+<li>
+    <a href="../comms/" class="dropdown-item">Comms</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">TRS-ECU</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../trs-ecu/overview/" class="dropdown-item">Overview</a>
+</li>
+                                    
+<li>
+    <a href="../../trs-ecu/hardware/" class="dropdown-item">Hardware</a>
+</li>
+                                    
+<li>
+    <a href="../../trs-ecu/comms/" class="dropdown-item">Comms</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">TRS-ARM</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../trs-arm/overview/" class="dropdown-item">Overview</a>
+</li>
+                                    
+<li>
+    <a href="../../trs-arm/hardware/" class="dropdown-item">Hardware</a>
+</li>
+                                    
+<li>
+    <a href="../../trs-arm/comms/" class="dropdown-item">Comms</a>
+</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ms-md-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a rel="prev" href="../overview/" class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" href="../comms/" class="nav-link">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-bs-toggle="collapse" data-bs-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-bs-level="1"><a href="#trs-gnd-hardware" class="nav-link">TRS-GND — Hardware</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-bs-level="2"><a href="#stm32f103c8tx-main-microcontroller" class="nav-link">STM32F103C8Tx — Main Microcontroller</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#hoperf-rfm95w-915143-mhz-lora-radio" class="nav-link">HopeRF RFM95W — 915/143 MHz LoRa Radio</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#seeed-studio-lora-module-seeedstudioloraermini-433-mhz-secondary-radio" class="nav-link">Seeed Studio LoRa Module (SEEEDSTUDIOLORAERMINI) — 433 MHz Secondary Radio</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#grid-connect-gc-xport-enh-ethernet-bridge" class="nav-link">Grid Connect GC-XPORT-ENH — Ethernet Bridge</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#ap63205wu-5v-buck-regulator" class="nav-link">AP63205WU — 5V Buck Regulator</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#ams1117-33-33v-ldo-regulator" class="nav-link">AMS1117-3.3 — 3.3V LDO Regulator</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#tlp3553a-optocouplers-nmos-fc-switch" class="nav-link">TLP3553A Optocouplers + NMOS — FC Switch</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#sn74lvc1t45dck-level-shifters" class="nav-link">SN74LVC1T45DCK — Level Shifters</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#usb-c-receptacle" class="nav-link">USB-C Receptacle</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#16-mhz-crystal-y1" class="nav-link">16 MHz Crystal (Y1)</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#trs-gnd-specific-hardware" class="nav-link">TRS-GND Specific Hardware</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="trs-gnd-hardware">TRS-GND — Hardware</h1>
+<p>The TRS hardware is built around a small set of components, each chosen for a specific reason. This page explains what each part does and why it is on the board.</p>
+<p>The TRS hardware is built around a small set of components, each chosen for a specific reason. This page explains what each part does and why it is on the board.</p>
+<hr />
+<h2 id="stm32f103c8tx-main-microcontroller">STM32F103C8Tx — Main Microcontroller</h2>
+<p>The STM32F103C8Tx is the brain of the board. It was chosen because it is a well-supported, low-cost ARM Cortex-M3 that has enough GPIO, SPI, UART, and USB peripherals to talk to every other chip on the board simultaneously. It runs the radio link state machine, processes arm/disarm commands, manages the Ethernet bridge, and controls the FC switch — all from a single device. The "Blue Pill" form factor also means it is widely available and has extensive community firmware support.</p>
+<h2 id="hoperf-rfm95w-915143-mhz-lora-radio">HopeRF RFM95W — 915/143 MHz LoRa Radio</h2>
+<p>The RFM95W is the primary radio link between TRS-GND and TRS-ARM on the rocket. LoRa (Long Range) modulation was chosen because it provides kilometre-scale range at low transmit power, which is critical for maintaining a link to the rocket at altitude or during a drift under parachute. The 915 MHz ISM band was selected because it is licence-free in the US and offers good penetration through airframe materials. The RFM95W talks to the STM32 over SPI, keeping the interface simple and the latency low for time-sensitive arm commands.</p>
+<h2 id="seeed-studio-lora-module-seeedstudioloraermini-433-mhz-secondary-radio">Seeed Studio LoRa Module (SEEEDSTUDIOLORAERMINI) — 433 MHz Secondary Radio</h2>
+<p>This module handles the REDS radio data coming from the rocket. It operates on 433 MHz separately from the 915 MHz arming link, so REDS telemetry reception and arming commands do not interfere with each other. Using a dedicated module for this keeps the two radio links electrically independent.</p>
+<h2 id="grid-connect-gc-xport-enh-ethernet-bridge">Grid Connect GC-XPORT-ENH — Ethernet Bridge</h2>
+<p>The Ethernet Xport converts UART serial data from the STM32 into TCP/IP packets on the wired network. This means the STM32 does not need to implement a full TCP/IP stack — it just sends and receives bytes over UART, and the Xport handles everything on the network side. TRS-GND uses this to feed data from the radio links into the test stand LAN, where the GSE laptop and GUI PC can receive it without any special drivers or direct serial connections.</p>
+<h2 id="ap63205wu-5v-buck-regulator">AP63205WU — 5V Buck Regulator</h2>
+<p>The board is powered at 5V from the Seeed Studio port. The AP63205WU is a synchronous buck converter that efficiently steps the input voltage down to a stable 5V rail. A switching regulator was used here rather than a linear regulator because it wastes far less power as heat, which matters for a board that may run for extended periods during a test campaign.</p>
+<h2 id="ams1117-33-33v-ldo-regulator">AMS1117-3.3 — 3.3V LDO Regulator</h2>
+<p>The STM32, RFM95W, and the LoRa module all run at 3.3V. The AMS1117 takes the 5V rail and produces a clean 3.3V supply. An LDO was chosen at this stage because the voltage drop from 5V to 3.3V is small enough that the heat dissipation is manageable, and the LDO gives a quieter output than a second switcher would, which is important for the radio and ADC circuits.</p>
+<h2 id="tlp3553a-optocouplers-nmos-fc-switch">TLP3553A Optocouplers + NMOS — FC Switch</h2>
+<p>The Easy Mini and E-matches require a low-resistance firing path — anything over roughly one ohm in series and the e-match will not receive enough current to fire. MOSFETs are used as the switching element because their on-state resistance (R_DS(on)) is extremely low, keeping the total series resistance in the firing circuit well within limits.</p>
+<p>The logic level shifter drives the MOSFET gates at a voltage high enough to fully saturate them. An under-driven gate leaves the MOSFET partially on with much higher resistance, which would undermine the whole point of using a MOSFET in the first place.</p>
+<p>The TRS board and the Easy Mini run on separate ground references. Connecting them directly would create a transient path between the two grounds, causing noise and current spikes to couple back into the STM32 and radio circuitry at the moment of firing. The TLP3553A optocouplers drive the MOSFET gates optically, so the two ground domains are never conductively linked and transients on the firing side stay isolated from the rest of the board.</p>
+<h2 id="sn74lvc1t45dck-level-shifters">SN74LVC1T45DCK — Level Shifters</h2>
+<p>The Ethernet Xport operates at 5V logic, while the STM32 operates at 3.3V. The SN74LVC1T45 single-bit level shifters sit between them, translating signals in both directions without needing separate power domains or resistor dividers. Two are used — one per UART direction — to keep the interface clean.</p>
+<h2 id="usb-c-receptacle">USB-C Receptacle</h2>
+<p>USB-C is included primarily for firmware flashing in DFU mode and for serial debug output and as a power supply for TRS-GND ONLY. It is not used during live operations. The USB_DETECT signal lets the STM32 know when a host is connected, which can be used to suppress radio transmissions or trigger a bootloader entry.</p>
+<h2 id="16-mhz-crystal-y1">16 MHz Crystal (Y1)</h2>
+<p>The STM32's internal RC oscillator is not accurate enough for USB enumeration or UART timing at high baud rates. The external 16 MHz crystal provides the precise clock reference that both the USB peripheral and the UART baud rate generators require.</p>
+<h2 id="trs-gnd-specific-hardware">TRS-GND Specific Hardware</h2>
+<p>TRS-GND also includes a <strong>Battery Manager</strong> circuit that monitors the 24V 6S LiPo ECU battery at the test stand. This keeps the ECU battery in a known state during test operations and prevents over-discharge.</p></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script src="../../js/bootstrap.bundle.min.js"></script>
+        <script>
+            var base_url = "../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../js/base.js"></script>
+        <script src="../../search/main.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>
