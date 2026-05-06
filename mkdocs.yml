@@ -11,6 +11,8 @@ markdown_extensions:
 nav:
   - Home: index.md
 
+  - Hardware: hardware.md
+
   - TRS-GND:
     - Overview: trs-gnd/overview.md
     - Hardware: trs-gnd/hardware.md

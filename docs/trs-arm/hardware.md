@@ -1,8 +1,16 @@
-## TRS-ARM — Hardware
+# TRS-ARM — Hardware
 
-TRS-ARM uses the same `rocket2-trs-hardware` PCB as TRS-GND and TRS-ECU. See [TRS-GND Hardware](../trs-gnd/hardware.md) for a full explanation of every component and the reasoning behind each choice.
+TRS-ARM uses the same `rocket2-trs-hardware` PCB as TRS-GND and TRS-ECU. See [Shared Hardware](../hardware.md) for a full explanation of every component and the reasoning behind each choice.
 
-The critical difference in the ARM role is that the **FC switch is actively used**. The TLP3553A optocouplers and NMOS transistors gate power to the Easy Mini flight computer in response to arm/disarm commands received over the radio link.
+The critical difference in TRS-ARM  is that the **FC switch is actively used**. The TLP3553A optocouplers and NMOS transistors gate power to the Easy Mini flight computer in response to arm/disarm commands received over the radio link.
+
+---
+
+## FC Switch
+
+![FC Switch schematic](../assets/fc-switch.png)
+
+---
 
 ## Why the FC Switch Is Designed the Way It Is
 

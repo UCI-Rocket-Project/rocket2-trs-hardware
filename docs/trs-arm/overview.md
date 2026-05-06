@@ -7,7 +7,7 @@
 
 ## Description
 
-TRS-ARM is mounted inside the rocket's avionics bay and is the only node in the system that can arm the Easy Mini flight computer. It receives arm and disarm commands from TRS-GND over the 915 MHz LoRa link and asserts the FC switch in response — physically gating power to the Easy Mini. The arming authority has to live on the rocket because the FC switch is co-located with the Easy Mini inside the airframe; there is no way to control it remotely without a node onboard.
+TRS-ARM is mounted inside the rocket's avionics bay and arms the Easy Mini flight computer. It receives arm and disarm commands from TRS-GND over the 915 MHz LoRa link and asserts the FC switch in response — physically gating power to the Easy Mini.
 
 TRS-ARM boots in a safe, disarmed state. The Easy Mini only receives power after an explicit ARM command is received and verified over the radio link, which means the flight computer cannot accidentally activate e-matches during transport, integration, or handling on the pad.
 
